@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap');
+
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1b003a, #000);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(25, 0, 60, 0.8);
+  padding: 15px 25px;
+  border-bottom: 2px solid #6d28d9;
+  box-shadow: 0 0 15px #6d28d9;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  color: #8b5cf6;
+  text-decoration: none;
+}
+
+.menu a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+  color: #8b5cf6;
+}
+
+
+.contenedor {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+.tarjeta {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+}
+
+.tarjeta h2 {
+  color: #8b5cf6;
+}
+
+
+textarea, input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  resize: none;
+}
+
+.boton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #6d28d9, #10b981);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  transform: scale(1.05);
+}
+
+
+.publicacion {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  border-left: 3px solid #8b5cf6;
+}
+
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.lista li {
+  background: rgba(255,255,255,0.08);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+
+.perfil {
+  text-align: center;
+}
+
+.perfil img {
+  border-radius: 50%;
+  border: 3px solid #8b5cf6;
+}
+
+
+.pie {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #aaa;
+  background: rgba(25, 0, 60, 0.8);
+  border-top: 2px solid #6d28d9;
+}
+
+/* ===== ESTILO LOGIN Y REGISTRO ===== */
+.fondo-login {
+  background: linear-gradient(135deg, #1b003a, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-contenedor {
+  text-align: center;
+}
+
+.logo-grande {
+  font-family: 'Orbitron', sans-serif;
+  color: #8b5cf6;
+  font-size: 48px;
+  margin-bottom: 25px;
+  text-shadow: 0 0 15px #8b5cf6;
+}
+
+.login {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.login label {
+  margin-top: 10px;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.enlace {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.enlace:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu a {
+    margin: 8px;
+  }
+
+  .contenedor {
+    margin: 20px;
+  }
+
+  .tarjeta {
+    padding: 15px;
+  }
+}
